@@ -1,10 +1,11 @@
-# Face-Haar-Flann-Recognition
-use Haar and Flann to do the Recognition<br>
+# Face-Haar-Surf-Recognition
+use Haar and Surf to do the Recognition<br>
 使用Surf方法进行人脸识别："FaceDection - Flann.py"<br>
 使用phash方法进行人脸识别："FaceDection - phash.py"<br>
 使用神经网络开源库进行人脸识别："FaceDection.py"<br>
 使用Haar分类器方法进行人脸检测："FaceDection - Haar.py"<br>
 使用动体追踪方法进行人像区域提取："Faild-BackGround.py"<br>
+Haar分类器模型："face.xml"<br>
 
 使用的开源库为ageitgey / face_recognition，但是效果极差，不建议尝试，<br>
 除了"FaceDection.py"外，其他文件只依赖python3+opencv3.4.1+contrib<br><br>
