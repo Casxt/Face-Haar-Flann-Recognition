@@ -6,6 +6,7 @@ use Haar and Surf to do the Recognition<br>
 使用Haar分类器方法进行人脸检测："FaceDection - Haar.py"<br>
 使用动体追踪方法进行人像区域提取："Faild-BackGround.py"<br>
 Haar分类器模型："face.xml"<br>
+模板库示例："FaceLib"<br>
 
 使用的开源库为ageitgey / face_recognition，但是效果极差，不建议尝试，<br>
 除了"FaceDection.py"外，其他文件只依赖python3+opencv3.4.1+contrib<br><br>
