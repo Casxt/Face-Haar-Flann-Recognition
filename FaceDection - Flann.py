@@ -44,9 +44,9 @@ draw_params = dict(matchColor=(0, 128, 255),
                 flags=2)
 fllowUser = False
 sift = cv2.xfeatures2d.SURF_create()
-handCascade = cv2.CascadeClassifier('D:\\face.xml')
+handCascade = cv2.CascadeClassifier('face.xml')
 TempSize = (256,256)
-FileDir = "D:\\FaceLib\\"
+FileDir = "FaceLib//"
 FileLocate = FileDir + "%s.JPG"
 FileList = []
 f_list = os.listdir(FileDir)
@@ -68,7 +68,7 @@ wb = cv2.xphoto.createGrayworldWB()
 wb.setSaturationThreshold(0.99)
 
 
-capture = cv2.VideoCapture(0)
+capture = cv2.VideoCapture(1)
 while capture.isOpened():
 
     ret, frame = capture.read()
@@ -117,7 +117,7 @@ while capture.isOpened():
             fllowUser = not fllowUser
     else:
         cv2.imshow("Cam", frame)
-        cv2.imshow("Face", face)
+        #cv2.imshow("Face", face)
         cv2.waitKey(50)
 
 capture.release()

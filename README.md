@@ -13,11 +13,22 @@ Haar分类器模型："face.xml"<br>
 
 功能最完整的是"FaceDection - Flann.py"，运行前先修改好里面的路径：<br>
 需要准备face.xml和人脸数据集，人脸数据集规格最好为256*256，只保留下吧到额头的部分，命名为XXX.JPG，注意.JPG大写，人像数据放在一个全英文路径且有访问权限的文件下，然后在程序中<br>
+<del>
 修改<br>
 handCascade = cv2.CascadeClassifier('D:\\face.xml')<br>
 为face.xml路径<br>
-
 修改：<br>
 FileDir = "D:\\FaceLib\\"<br>
 为人像文件夹路径。<br>
+</del>
+更新:
+
+目前
+
+handCascade = cv2.CascadeClassifier('face.xml')
+
+FileDir = "FaceLib\\"
+
+将默认使用同目录下的FaceLib和face.xml,使用时请先将执行路径换到项目文件夹下，再运行
+`python "FaceDection - Flann.py"`
 
